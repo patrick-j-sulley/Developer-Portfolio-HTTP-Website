@@ -1,0 +1,442 @@
+/* We begin with designing for smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+
+@import url('https://fonts.googleapis.com/css?family=Capriola|Ubuntu&display=swap');
+
+html, body { height: 100%; width: 100%;} /* no need to edit this, set it and forget it */
+
+body {
+  background: #2D2D2D;
+  font-family: 'Ubuntu', sans-serif;
+  color: #f7f7f7;
+  font-size: 1rem
+}
+
+h1, h2, h3 {
+  font-family: 'Capriola', sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  letter-spacing: 0.05rem;
+}
+
+#start, 
+#about,
+#work, 
+#contact {
+  display: block;
+  min-height:100vh;
+    padding-bottom: 10%;
+}
+
+#work{
+    margin-bottom: 30%;
+}
+footer
+{
+    background: #222;
+}
+
+nav {
+  display: none;
+  position: fixed;
+}
+
+footer nav {
+  width: 70%;
+  top: 10%;
+  right: 10%;
+  padding: 1%;
+  z-index: 100;
+}
+
+header nav {
+  background: #fff;
+}
+
+#menu-toggle {
+  position: fixed;
+  z-index: 100;
+  top: 2%;
+  right: 3%;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  text-align: center;
+  background: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 2px 3px 2px rgba(25,25,25,0.5);
+  box-shadow: 1px 2px 3px 2px rgba(25,25,25,0.5);
+}
+
+#menu-toggle svg {
+  fill: #333;
+}
+
+#mobile-nav {
+  background: #222;
+  text-align: center;
+  padding: 10px;
+  -webkit-box-shadow: 1px 2px 3px 2px rgba(25,25,25,0.5);
+  box-shadow: 1px 2px 3px 2px rgba(25,25,25,0.5);
+}
+
+#mobile-nav a {
+  text-decoration: none;
+  font-size: 2rem;
+  display: block;
+  color: #888;
+  padding: 3% 5%;
+}
+
+#start {
+  text-align: center;
+  background: url(../images/bg-start-small.jpg) no-repeat top center fixed;
+  background-size: cover;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
+  
+}
+
+#start h1 {
+  padding-top: 70%;
+  font-size: 5rem;
+  letter-spacing: -0.2rem;
+  line-height: 2rem;
+}
+
+#start p {
+  margin-top: 1em;
+  font-size: 1.5rem;
+
+    
+}
+
+#about,
+#work,
+#contact {
+  text-align: center;
+}
+
+#about h2,
+#work h2,
+#contact h2 {
+  padding-top: 5%;
+  font-size: 2rem;
+}
+
+    #about-avatar img {
+    display: block;
+    position: relative;
+    border-radius: 80px; 
+    margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    border: 3px white solid;
+  }
+
+
+#about h3,
+#work h3,
+#contact h3 {
+  padding-top: 1%;
+}
+
+#about p,
+#work article header p,
+#contact p {
+  max-width: 600px;
+  padding: 0 5% 0 5%;
+  margin: 1em auto 0 auto;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.feature {
+  width: 100%;
+  margin: 10px 0 10px 0;
+  display: block;
+  padding: 0;
+}
+
+.feature a {
+  display: block;
+  margin: 2%;
+  text-align: center;
+  border: solid #fdfdfd 3px;
+  border-radius: 5px;
+  
+  position: relative;
+  overflow: hidden;
+}
+
+.feature a img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  
+  position: relative;
+  z-index: 1;
+}
+
+.feature a p {
+  position: absolute;
+  z-index: 2;
+  
+  bottom: -110%;
+  background-color: rgba(97, 135, 214, 0.8);
+  margin: auto;
+  display: block;
+  width: 100%;
+  padding: 31% 0 31% 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  color: #dfdfdf;
+  text-shadow: 1px 1px 2px rgba(25, 25, 25, 0.5);
+  text-decoration: none;
+}
+
+.svg-icon {
+  width: 11%;
+  height: 11%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 15%;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #f7f7f7;
+}
+
+.svg-icon circle {
+  stroke: #f7f7f7;
+  stroke-width: 1;
+}
+
+.svg-icon:hover {
+  transform: scale(1.5);
+}
+
+#contact ul {
+  max-width: 400px;
+  padding: 0 5% 0 5%;
+  margin: 1em auto 0 auto;
+}
+
+#contact ul li {
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+}
+
+#contact ul li a {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px 0 10px;
+  margin-left: 1px;
+  background: #f7f7f7;
+  border-radius: 0 3px 3px 0;
+  text-decoration: none;
+  color: #333;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+  padding: 40px;
+}
+
+@media (min-width:600px) { 
+  
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+
+  #start {
+    background: url(../images/bg-start-medium.jpg) no-repeat top center scroll;
+    background-size: cover;
+  }
+
+  #start h1 {
+    padding-top: 55%;
+  }
+
+  .feature {
+    width: 50%;
+    float: left;
+  }
+
+
+} /* do not delete this */
+
+@media (min-width:1025px) { 
+  
+  /* big landscape tablets, laptops, and desktops */ 
+  
+  footer nav {
+    display: none !important;
+  }
+
+  header nav {
+    background: #222;
+    display: block; /* this brings it back */
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+  }
+
+  nav ul {
+    text-align: center;  
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+
+  nav ul li a {
+    color: #777777;
+    text-decoration: none;
+    padding: 30px 20px 30px 20px;
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    
+    -webkit-transition: background 0.2s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out;
+    -ms-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+  }
+
+  nav ul li a:hover {
+    color: #fff;
+    background: #805AC9;
+  }
+
+  nav ul li a:active {
+    background: #632FB1;
+    color: #fff;
+  }
+  
+  nav ul li .active {
+    background: #632FB1;
+    color: #fff;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+
+  #start, 
+  #about,
+  #work, 
+  #contact {
+    display: block;
+    padding-top: 4%;
+    min-height:96vh;
+  }
+
+  #start {
+    background: url(../images/bg-start-large.jpg) no-repeat top center scroll cover;
+  }
+  
+  #start h1 {
+    padding-top: 25%;
+    font-size: 5rem;
+  }
+  
+  #about h2,
+  #work h2, 
+  #contact h2 {
+    padding-top: 100px;
+  }
+  
+  #about {
+    background-image: url(../images/animated-bg.png);
+    background-size: 50vh auto;
+	  background-position: 0px 0px;
+	  background-repeat: repeat;
+    animation: about-bg-animated 30s linear infinite;
+  }
+    
+
+  @keyframes about-bg-animated {
+	  from { background-position: 0 0; }
+	  to { background-position: 0 100vh; }
+  }
+
+  .feature a img {
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+  }  
+
+  .feature a:hover img {
+    -moz-transform: scale(2) rotate(3deg);
+    -webkit-transform: scale(2) rotate(3deg);
+    -o-transform: scale(2) rotate(3deg);
+    -ms-transform: scale(2) rotate(3deg);
+    transform: scale(2) rotate(3deg);
+  }  
+
+  .feature a p {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background: rgba(128, 90, 201, 0.8);
+  }  
+
+  .feature a:hover p {
+    bottom: 0;
+  }
+
+  #contact {
+    animation: contact-bg-animated 10s ease-in-out infinite;
+  }
+
+  @keyframes contact-bg-animated {
+	  0%, 100% { 
+	    background: #2D2D2D; 
+	  }
+	  
+	  25% { 
+	    background: #211542; 
+	  }
+
+	  50% { 
+	    background: #4F347A; 
+	  }
+
+	  75% { 
+	    background: #632FB1; 
+	  }
+  }
+    
+    .form {
+        
+        margin-top: 200%;
+    }
+
+
+} /* do not delete this */
+
+
+
+
+
+
+
+
+
+
+

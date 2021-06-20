@@ -1,0 +1,222 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  background-image: url("background.jpg");
+  background-size: 100% auto;
+  font-family: Verdana;
+  background-color: black;
+  background-position: center;
+  background-attachment: fixed;
+  color: #EBEBEB;
+  text-align: center;
+
+}
+
+h1{
+  font-size: 45px;
+  margin-bottom: 10px;
+  font-family: Helvetica;
+}
+
+h2{
+  font-size: 25px;
+}
+
+h3{
+  
+    font-size: 18px;
+
+}
+
+p, li {
+  line-height: 22px;
+  font-size: 16px;
+}
+
+a {
+  color: #A85FEB;
+  font-style:italic;
+}
+
+.wrapper {
+	width: 80%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	min-width: 800px;
+		background-color: rgba(0, 0, 0, 0.75); 
+			border-radius: 50px 50px 50px 50px;
+}
+
+#header {
+  width: 800px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  
+  text-align: center;
+}
+
+.profileimg {
+  border-radius: 50px 50px 50px 50px;
+  margin: 10px;
+}
+
+#intro {
+  width: 800px;
+  /*margin-top: 30px;*/
+  margin-right: auto;
+  /*margin-bottom: 30px;*/
+  margin-left: auto;
+  padding: 5px;
+  padding-left: 20px;
+    padding-right: 20px;
+      margin-bottom: 30px;
+}
+
+#sign-up {
+  width: 800px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  padding: 5px;
+}
+
+#sign-up #email-field {
+  display: inline;
+  width: 400px;
+  padding: 12px;
+  border: solid 1px #888;
+  border-radius: 3px;
+}
+
+#sign-up #submit-button {
+  display: inline;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 3px;
+  text-decoration: none; /* do more: css-tricks.com/almanac/properties/t/text-decoration */ 
+  color: #EBEBEB;
+  background-color: #220351;
+  cursor: pointer; /* This makes the button behave like a button should */
+}
+
+#sign-up #submit-button:hover {
+  background-color: #A85FEB;
+}
+
+#footer {
+  width: 800px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.call-to-action {
+  display: inline;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 3px;
+  text-decoration: none; /* do more: css-tricks.com/almanac/properties/t/text-decoration */ 
+  color: #EBEBEB;
+  background-color: #220351;
+  border-bottom: solid 5px #03002C;
+}
+
+.call-to-action:hover {
+  /*background-color: #A04CEA;*/
+   background-color: #03002C;
+
+  border-color: #555;
+}
+
+.facebook {
+  font-weight: bold;
+  background-color: #3B5998;
+  color: #fff;
+  border-color: #2d4576;
+}
+
+.facebook:hover {
+  background-color: #425f9a;
+  border-color: #2d4576;
+}
+
+.facebook:active {
+  background-color: #2d4576;
+  border-color: #2d4576;
+}
+
+.linkedin {
+  font-weight: bold;
+  background-color: #00a0dc;
+  color: #fff;
+  border-color: #007bb5;
+}
+
+.linkedin:hover {
+  background-color: #01B9FF;
+  border-color: #007bb5;
+}
+
+.linkedin:active {
+  background-color: #007bb5;
+  border-color: #007bb5;
+}
+
+.twitter {
+  font-weight: bold;
+  background-color: #1da1f2;
+  color: #fff;
+  border-color: #096093;
+}
+
+.twitter:hover {
+  background-color: #65C6FF;
+  border-color: #096093;
+}
+
+.twitter:active {
+  background-color: #096093;
+  border-color: #096093;
+}
+
+.schoolblog {
+  font-weight: bold;
+  background-color: #3D3D3D;
+  color: #fff;
+  border-color: #212121;
+}
+
+.schoolblog:hover {
+  background-color: #5B5B5B;
+  border-color: #212121;
+}
+
+.schoolblog:active {
+  background-color: #212121;
+  border-color: #212121;
+}
+
+.github {
+  font-weight: bold;
+  background-color: #A84CB3;
+  color: #fff;
+  border-color: #4D2F78;
+}
+
+.github:hover {
+  background-color: #B453C1;
+  border-color: #4D2F78;
+}
+
+.github:active {
+  background-color: #4D2F78;
+  border-color: #4D2F78;
+}
